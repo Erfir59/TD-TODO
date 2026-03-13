@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ma To-Do List</title>
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+</head>
+<body>
+
+
+  <div class="card">
+    <h1>Ma to-do list</h1>
+
+    <div class="input-row">
+      <input type="text" id="taskInput" placeholder="Ajouter une tâche..." />
+      <button class="add-btn" id="addBtn">Ajouter</button>
+    </div>
+
+    <div class="filters">
+      <button class="filter-btn active" data-filter="all">Toutes</button>
+      <button class="filter-btn" data-filter="active">À faire</button>
+      <button class="filter-btn" data-filter="done">Terminées</button>
+    </div>
+
+    <div class="task-list" id="taskList"></div>
+    <div class="empty" id="emptyMsg">Aucune tâche ici.</div>
+
+    <div class="footer">
+      <span id="counter"></span>
+      <button class="clear-btn" id="clearBtn">Effacer terminées</button>
+    </div>
+  </div>
+
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.0.7/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
